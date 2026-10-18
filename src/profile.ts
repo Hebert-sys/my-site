@@ -35,7 +35,7 @@ export const profile = {
 
   /** One decision you're proud of, in a sentence. */
   decisionImProudOf:
-    "I chose to take a gap semester to work retail; it taught me more about customers than any textbook.",
+    "I chose to pursue my education internationally to experience a new culture, learn a different economic perspective, and grow personally.",
 
   /**
    * Your photo. Replace public/photo.svg with a real photo of you

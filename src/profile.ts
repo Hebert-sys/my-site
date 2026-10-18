@@ -29,8 +29,8 @@ export const profile = {
    * how classmates find something to say hello about.
    */
   funFacts: [
-    "I once assembled IKEA furniture without leftover screws.",
-    "I can name every U.S. state capital in under two minutes.",
+    "Paid for a ziplining adventure, watched my friend go solo after I chickened out on the platform, and waited safely on the ground to debrief.",
+    "I once got lost during a layover at Doha International Airport.",
   ],
 
   /** One decision you're proud of, in a sentence. */

@@ -15,7 +15,7 @@ export default function AboutPage() {
         <img
           src={profile.photoPath}
           alt={profile.displayName}
-          className="h-56 w-56 shrink-0 rounded-2xl border border-line object-cover"
+          className="h-56 w-56 shrink-0 rounded-2xl border border-line object-cover object-top"
         />
         <div>
           <h1 className="text-4xl font-bold">{profile.displayName}</h1>

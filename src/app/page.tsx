@@ -64,6 +64,21 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* ── Fun facts ───────────────────────────────────────────────── */}
+      <section className="mt-14">
+        <h2 className="text-2xl font-bold">A few fun facts</h2>
+        <ul className="mt-4 space-y-2">
+          {profile.funFacts.map((fact) => (
+            <li key={fact} className="flex gap-3">
+              <span aria-hidden className="mt-1 text-accent">
+                ✦
+              </span>
+              <span>{fact}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
       {/* ── Portfolio of decision services ───────────────────────────── */}
       <section className="mt-14">
         <h2 className="text-2xl font-bold">A portfolio of decision services</h2>

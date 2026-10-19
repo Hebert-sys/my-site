@@ -58,7 +58,7 @@ export const profile = {
    * A short bio for your home page: two or three sentences, written like
    * a person, not a resume. What are you studying? What do you care about?
    */
-  bio: "I'm a business student at the University of Delaware learning to make good decisions at any scale. This site is my working portfolio: every course challenge deploys here as a live service.",
+  bio: "I'm an Accounting Analytics graduate student at the University of Delaware with a Bachelor's in Accounting from Zimbabwe Ezekiel Guti University. I bridge the gap between financial reporting and technical execution, leveraging Power BI, advanced spreadsheets, and SQL modeling to turn complex data into clear, actionable business decisions.",
 
   /**
    * Your GitHub repo URL. The course platform reads this from /api/health to

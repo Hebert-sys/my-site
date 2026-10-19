@@ -52,7 +52,7 @@ export const profile = {
   rosterVisibility: "class" as "class" | "professor-only",
 
   /** A one-line tagline for your home page. Make it yours. */
-  tagline: "Building a portfolio of decision services, one lane at a time.",
+  tagline: "Receivables Analyst, Junior Accountant, Part Analyst, and Creditors Analyst",
 
   /**
    * A short bio for your home page: two or three sentences, written like

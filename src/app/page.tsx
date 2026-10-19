@@ -38,12 +38,31 @@ const SERVICES = [
 export default function HomePage() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-14">
-      {/* ── Hero ─────────────────────────────────────────────────────── */}
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
-        {profile.tagline}
-      </p>
-      <h1 className="mt-3 text-5xl font-bold">{profile.displayName}</h1>
-      <p className="mt-5 max-w-prose text-lg text-muted">{profile.bio}</p>
+      {/* ── Hero: photo + intro (like a resume-ready first impression) ─ */}
+      <div className="flex flex-col gap-10 sm:flex-row sm:items-start">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={profile.photoPath}
+          alt={profile.displayName}
+          className="h-56 w-56 shrink-0 rounded-2xl border border-line object-cover object-center"
+        />
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+            {profile.tagline}
+          </p>
+          <h1 className="mt-3 text-5xl font-bold">{profile.displayName}</h1>
+          <p className="mt-3 text-muted">
+            <a href={`mailto:${profile.email}`} className="transition hover:text-accent">
+              {profile.email}
+            </a>
+            <span className="mx-2 text-line" aria-hidden>
+              ·
+            </span>
+            <span>{profile.hometown}</span>
+          </p>
+          <p className="mt-5 max-w-prose text-lg text-muted">{profile.bio}</p>
+        </div>
+      </div>
 
       {/* ── Portfolio of decision services ───────────────────────────── */}
       <section className="mt-14">

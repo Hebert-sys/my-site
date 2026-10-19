@@ -13,7 +13,7 @@
  * One word from: "regatta" | "dune" | "orchard" | "noir"
  * (Or invent your own: copy a palette below, change the colors, name it.)
  */
-export const paletteChoice = "blazer";
+export const paletteChoice = "italiano";
 
 /** ── 2. Pick your font pairing ─────────────────────────────────────────
  * One word from: "editorial" | "geometric" | "classic"
@@ -21,7 +21,7 @@ export const paletteChoice = "blazer";
  *   geometric — modern grotesk headings (tech/startup feel)
  *   classic   — high-contrast serif headings (timeless feel)
  */
-export const fontChoice = "classic";
+export const fontChoice = "editorial";
 
 /** ── 3. (Optional) Override the accent ─────────────────────────────────
  * Set to any CSS color (e.g. "#c2410c" or "rebeccapurple") to replace the
@@ -91,6 +91,16 @@ export const PALETTES: Record<string, Palette> = {
     line: "#2c2c31",
     accent: "#e8b04b",
     accentInk: "#1a1508",
+  },
+  /** Travertine, espresso, and terracotta — Italian editorial. */
+  italiano: {
+    paper: "#f6f0e6",
+    surface: "#fffaf3",
+    ink: "#2c2118",
+    muted: "#6f6256",
+    line: "#e4d6c4",
+    accent: "#9c3d2a",
+    accentInk: "#fffaf3",
   },
   /** Navy ink + burgundy accent — tuned to Hebert's blazer/tie photo. */
   blazer: {

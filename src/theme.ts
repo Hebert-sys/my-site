@@ -13,7 +13,7 @@
  * One word from: "regatta" | "dune" | "orchard" | "noir"
  * (Or invent your own: copy a palette below, change the colors, name it.)
  */
-export const paletteChoice = "regatta";
+export const paletteChoice = "blazer";
 
 /** ── 2. Pick your font pairing ─────────────────────────────────────────
  * One word from: "editorial" | "geometric" | "classic"
@@ -21,7 +21,7 @@ export const paletteChoice = "regatta";
  *   geometric — modern grotesk headings (tech/startup feel)
  *   classic   — high-contrast serif headings (timeless feel)
  */
-export const fontChoice = "editorial";
+export const fontChoice = "classic";
 
 /** ── 3. (Optional) Override the accent ─────────────────────────────────
  * Set to any CSS color (e.g. "#c2410c" or "rebeccapurple") to replace the
@@ -91,6 +91,16 @@ export const PALETTES: Record<string, Palette> = {
     line: "#2c2c31",
     accent: "#e8b04b",
     accentInk: "#1a1508",
+  },
+  /** Navy ink + burgundy accent — tuned to Hebert's blazer/tie photo. */
+  blazer: {
+    paper: "#f5f2ec",
+    surface: "#fffcf7",
+    ink: "#1a2332",
+    muted: "#5a6574",
+    line: "#ddd5c8",
+    accent: "#8b2340",
+    accentInk: "#ffffff",
   },
 };
 

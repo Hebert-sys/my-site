@@ -107,8 +107,11 @@ export default async function ReasoningPage() {
                 {Number(plausibility.answer.posterior).toFixed(3)}
               </strong>
             </p>
-            {/* TODO(yours): one sentence a manager could read, e.g. what this
-                posterior means for the flagged case (Station 2.3). */}
+            <p className="mt-2 max-w-prose text-sm text-muted">
+              Of every flagged case, this is the share that actually has the condition. A
+              rare condition stays unlikely even after a flag, because most flags come from
+              the much larger clean group.
+            </p>
           </div>
         ) : (
           <p className="mt-3 text-muted">No plausibility probe yet.</p>
@@ -139,8 +142,10 @@ export default async function ReasoningPage() {
                 {Number(bernoulli.answer.probabilityStatement).toFixed(2)}
               </span>
             </p>
-            {/* TODO(yours): one sentence on what the expected payoff does and
-                does not promise (Station 2.4). */}
+            <p className="mt-2 max-w-prose text-sm text-muted">
+              The expected payoff is the average result over many repeats. One trial can
+              still land on either payoff; the average does not promise the next outcome.
+            </p>
           </div>
         ) : (
           <p className="mt-3 text-muted">No Bernoulli probe yet.</p>

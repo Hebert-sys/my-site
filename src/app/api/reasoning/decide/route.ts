@@ -31,34 +31,29 @@ export async function POST(req: Request) {
   let answer: Record<string, any> | undefined;
 
   if (problem.type === "syllogism") {
-    // TODO(Challenge 2, step 4a): Station 2.1's truth table as a lookup.
-    // problem.observation.asserts tells you which canonical form this is:
-    //   "A"     -> valid   (affirming the antecedent)
-    //   "not-B" -> valid   (denying the consequent)
-    //   "B"     -> invalid, fallacy: "affirming the consequent"
-    //   "not-A" -> invalid, fallacy: "denying the antecedent"
-    // Build a four-row lookup object and set:
-    // answer = { verdict: ..., fallacy: ... (only when invalid) }
+    const forms: Record<string, { verdict: string; fallacy?: string }> = {
+      A: { verdict: "valid" },
+      "not-B": { verdict: "valid" },
+      B: { verdict: "invalid", fallacy: "affirming the consequent" },
+      "not-A": { verdict: "invalid", fallacy: "denying the antecedent" },
+    };
+    answer = forms[problem.observation?.asserts];
   }
 
   if (problem.type === "plausibility") {
-    // TODO(Challenge 2, step 4b): Station 2.3's counting method. Imagine
-    // N = 10,000 cases (any N works, it cancels in the division; it is
-    // here so the names tell the truth: these are counts of cases).
-    // From problem.baseRate, problem.hitRate, problem.falseAlarmRate:
-    //   trueFlags  = N * baseRate * hitRate               (have it, flagged)
-    //   falseFlags = N * (1 - baseRate) * falseAlarmRate  (clean, flagged)
-    // answer = { posterior: trueFlags / (trueFlags + falseFlags) }
+    const N = 10_000;
+    const trueFlags = N * problem.baseRate * problem.hitRate;
+    const falseFlags = N * (1 - problem.baseRate) * problem.falseAlarmRate;
+    answer = { posterior: trueFlags / (trueFlags + falseFlags) };
   }
 
   if (problem.type === "bernoulli") {
-    // TODO(Challenge 2, step 4c): Station 2.4's Bernoulli read. From
-    // problem.theta, problem.payoffs, and problem.probabilityOf:
-    // answer = {
-    //   support: [0, 1],
-    //   expectedValue: theta * onSuccess + (1 - theta) * onFailure,
-    //   probabilityStatement: theta if probabilityOf is 1, else 1 - theta,
-    // }
+    const { theta, payoffs, probabilityOf } = problem;
+    answer = {
+      support: [0, 1],
+      expectedValue: theta * payoffs.onSuccess + (1 - theta) * payoffs.onFailure,
+      probabilityStatement: probabilityOf === 1 ? theta : 1 - theta,
+    };
   }
 
   if (answer === undefined) {

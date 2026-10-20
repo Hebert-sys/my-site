@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { notBuiltYet } from "@/lib/not-built-yet";
 
 /**
  * ── Challenge 2, step 1: announce the service ─────────────────────────────
@@ -15,12 +14,9 @@ import { notBuiltYet } from "@/lib/not-built-yet";
  * step), delete the notBuiltYet line and un-comment the return.
  */
 export async function GET() {
-  // TODO(Challenge 2, step 1): delete this line and un-comment the return below.
-  return notBuiltYet(2, "Reasoning & Uncertainty Service");
-
-  // return NextResponse.json({
-  //   service: "reasoning", // which decision service is answering
-  //   specVersion: "1", // which version of the wire contract it speaks
-  //   studentToken: process.env.SITE_TOKEN, // proves this service is yours
-  // });
+  return NextResponse.json({
+    service: "reasoning",
+    specVersion: "1",
+    studentToken: process.env.SITE_TOKEN,
+  });
 }

@@ -1,0 +1,691 @@
+{
+  "probeId": "yours",
+  "type": "capstone-decision",
+  "domain": "staffing",
+  "yours": true,
+  "scenario": {
+    "narrative": "Patrick owns two auto repair shops, Shop 1 and Shop 2. Next quarter (60 working days) he will work at one of them every day. The history shows each past day at each shop: whether Patrick was there and how many cars the shop fixed. Patrick needs the two shops together to fix at least 5,350 cars next quarter. He can accept falling short 1 quarter in 10, but not more often. Which shop should he work at?",
+    "params": {
+      "reader": "Patrick",
+      "unit": "cars fixed",
+      "periodName": "quarter",
+      "periodLength": 60,
+      "periodUnit": "working days",
+      "runs": 10000
+    },
+    "decisionRule": "Run the recipe 10,000 times; each run is one possible quarter. In each run, draw every node once, in order, and work out both options' results. For each option report the typical result (the middle of the runs), the likely range (from the 5% point to the 95% point of the runs), and the chance of falling short (the share of runs below 5,350 cars fixed). Recommend the option with the higher typical result among the options whose chance of falling short is at most 0.1. Also report how often the recommended option's result is higher than the other's in the same run."
+  },
+  "history": [
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 51
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 58
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 54
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 45
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 50
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 54
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 47
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 42
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 57
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 49
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 51
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 41
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 51
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 57
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 48
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 49
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 60
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 53
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 53
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 60
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 52
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 35
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 41
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 51
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 39
+    },
+    {
+      "shop": 1,
+      "patrick": 1,
+      "cars": 55
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 46
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 47
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 37
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 50
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 36
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 49
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 40
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 41
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 46
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 43
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 34
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 43
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 36
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 41
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 49
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 45
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 39
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 46
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 39
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 40
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 50
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 37
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 41
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 47
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 46
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 39
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 46
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 43
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 48
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 43
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 43
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 53
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 44
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 45
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 43
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 42
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 39
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 45
+    },
+    {
+      "shop": 1,
+      "patrick": 0,
+      "cars": 53
+    },
+    {
+      "shop": 2,
+      "patrick": 1,
+      "cars": 49
+    },
+    {
+      "shop": 2,
+      "patrick": 1,
+      "cars": 50
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 44
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 44
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 42
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 39
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 47
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 50
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 37
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 45
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 43
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 37
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 37
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 44
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 44
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 36
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 34
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 50
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 34
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 53
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 49
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 44
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 46
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 40
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 47
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 40
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 38
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 43
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 51
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 32
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 42
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 38
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 40
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 33
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 34
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 45
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 45
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 42
+    },
+    {
+      "shop": 2,
+      "patrick": 0,
+      "cars": 41
+    }
+  ],
+  "candidates": [
+    {
+      "id": "shop-1",
+      "label": "Shop 1"
+    },
+    {
+      "id": "shop-2",
+      "label": "Shop 2"
+    }
+  ],
+  "limit": {
+    "atLeast": 5350,
+    "maxChance": 0.1,
+    "plain": "Patrick needs at least 5,350 cars fixed next quarter. He can accept falling short 1 quarter in 10."
+  },
+  "dag": {
+    "nodes": [
+      {
+        "id": "avg-shop-1-with",
+        "plain": "Shop 1's average cars per day with Patrick there. Based on 26 past days; more days would narrow it.",
+        "repeat": "once",
+        "draw": {
+          "type": "normal",
+          "mean": 50.1,
+          "sd": 1.08
+        },
+        "basedOn": 26
+      },
+      {
+        "id": "cars-shop-1-with",
+        "plain": "Cars Shop 1 fixes on one day with Patrick there. Each day varies around the shop's average.",
+        "repeat": "daily",
+        "draw": {
+          "type": "normal",
+          "mean": "avg-shop-1-with",
+          "sd": 5.5
+        }
+      },
+      {
+        "id": "avg-shop-1-without",
+        "plain": "Shop 1's average cars per day without Patrick. Based on 39 past days; more days would narrow it.",
+        "repeat": "once",
+        "draw": {
+          "type": "normal",
+          "mean": 43.4,
+          "sd": 0.88
+        },
+        "basedOn": 39
+      },
+      {
+        "id": "cars-shop-1-without",
+        "plain": "Cars Shop 1 fixes on one day without Patrick. Each day varies around the shop's average.",
+        "repeat": "daily",
+        "draw": {
+          "type": "normal",
+          "mean": "avg-shop-1-without",
+          "sd": 5.5
+        }
+      },
+      {
+        "id": "avg-shop-2-with",
+        "plain": "Shop 2's average cars per day with Patrick there. Based on 2 past days; more days would narrow it.",
+        "repeat": "once",
+        "draw": {
+          "type": "normal",
+          "mean": 49.5,
+          "sd": 3.75
+        },
+        "basedOn": 2
+      },
+      {
+        "id": "cars-shop-2-with",
+        "plain": "Cars Shop 2 fixes on one day with Patrick there. Each day varies around the shop's average.",
+        "repeat": "daily",
+        "draw": {
+          "type": "normal",
+          "mean": "avg-shop-2-with",
+          "sd": 5.3
+        }
+      },
+      {
+        "id": "avg-shop-2-without",
+        "plain": "Shop 2's average cars per day without Patrick. Based on 37 past days; more days would narrow it.",
+        "repeat": "once",
+        "draw": {
+          "type": "normal",
+          "mean": 41.9,
+          "sd": 0.87
+        },
+        "basedOn": 37
+      },
+      {
+        "id": "cars-shop-2-without",
+        "plain": "Cars Shop 2 fixes on one day without Patrick. Each day varies around the shop's average.",
+        "repeat": "daily",
+        "draw": {
+          "type": "normal",
+          "mean": "avg-shop-2-without",
+          "sd": 5.3
+        }
+      },
+      {
+        "id": "total-shop-1",
+        "plain": "Cars both shops fix next quarter if Patrick works at Shop 1.",
+        "repeat": "result",
+        "option": "shop-1",
+        "compute": "sum over the 60 days of (cars-shop-1-with + cars-shop-2-without)"
+      },
+      {
+        "id": "total-shop-2",
+        "plain": "Cars both shops fix next quarter if Patrick works at Shop 2.",
+        "repeat": "result",
+        "option": "shop-2",
+        "compute": "sum over the 60 days of (cars-shop-2-with + cars-shop-1-without)"
+      }
+    ],
+    "edges": [
+      [
+        "avg-shop-1-with",
+        "cars-shop-1-with"
+      ],
+      [
+        "avg-shop-1-without",
+        "cars-shop-1-without"
+      ],
+      [
+        "avg-shop-2-with",
+        "cars-shop-2-with"
+      ],
+      [
+        "avg-shop-2-without",
+        "cars-shop-2-without"
+      ],
+      [
+        "cars-shop-1-with",
+        "total-shop-1"
+      ],
+      [
+        "cars-shop-2-without",
+        "total-shop-1"
+      ],
+      [
+        "cars-shop-2-with",
+        "total-shop-2"
+      ],
+      [
+        "cars-shop-1-without",
+        "total-shop-2"
+      ]
+    ]
+  }
+}
